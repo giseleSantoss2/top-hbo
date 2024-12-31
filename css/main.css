@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414; 
+    color: #fff; 
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    text-align: center;
+    position: relative; 
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+}
+
+.nav.is-scrolled {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.logo-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #6b3bb9; 
+    text-transform: uppercase;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6b3bb9; 
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #6b3bb9; 
+}
+
+
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.pricing-plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33.33% - 40px); 
+}
+
+.pricing-plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.pricing-plan-price {
+    font-size: 18px;
+    color: #6b3bb9;
+    margin-bottom: 10px;
+}
+
+.pricing-plan-features {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing-plan-features li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pricing-plan-cta {
+    display: inline-block;
+    background-color: #6b3bb9;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto; 
+}
+
+
+
+.estreias {
+    background-color: #f4f4f4;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.estreias-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.estreias-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.series-card {
+    width: calc(33.33% - 20px);
+    max-width: 300px; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.series-card:hover {
+    transform: translateY(-5px);
+}
+
+.series-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.series-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #6b3bb9;
+}
+
+
+.watch-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6b3bb9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.watch-button:hover {
+    background-color: #54329e;
+}
+
+
+.footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 40px; 
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6b3bb9; 
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    background-color: #542a8a; 
+}
+
+
+body {
+    background-color: #141414; 
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify; 
+}
+
+.about-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    max-width: 100%; 
+    display: block; 
+    margin: 20px auto; 
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+
+.about-footer {
+    margin-top: 50px; 
+    background-color: #333;
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center; 
+}
+
+.about {
+    min-height: 500px; 
+}
+
+
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 20px 0; 
+    margin-top: 20px; 
+}
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px; 
+    color: #fff; 
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #6b3bb9; 
+}
+
+
+.copyright {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #fff;
+}
